@@ -42,7 +42,7 @@ public class ContactAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
         if (holder instanceof ContactViewHolder){
 
-            TextView username = ((ContactViewHolder) holder).s;
+            TextView username = ((ContactViewHolder) holder).s1;
 
             username.setText(s);
 
@@ -51,7 +51,7 @@ public class ContactAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     }
     public class ContactViewHolder extends RecyclerView.ViewHolder{
         public View view;
-        public TextView s;
+        public TextView s1;
         public ImageView icon;
 
 
@@ -61,7 +61,7 @@ public class ContactAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             this.view = v;
 
 
-            s = view.findViewById(R.id.tv_fullname);
+            s1 = view.findViewById(R.id.tv_fullname);
 
         }
 
